@@ -38,8 +38,8 @@ def transform_text(text):
     return " ".join(y)
 
 # Load the vectorizer and model
-tfidf = pickle.load(open('vectorizer1.pkl','rb'))
-model = pickle.load(open('model1.pkl','rb'))
+tfidf = pickle.load(open('models/vectorizer1.pkl','rb'))
+model = pickle.load(open('models/model1.pkl','rb'))
 
 # Streamlit app with custom styles
 st.set_page_config(page_title="Spam Classifier", page_icon="📩")
